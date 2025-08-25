@@ -46,6 +46,7 @@
             "pages": [
               "get-started/get-funded",
               "get-started/base-services-hub",
+              "get-started/base-mentorship-program",
               "get-started/country-leads-and-ambassadors"
             ]
           },
@@ -100,7 +101,8 @@
             "group": "Flashblocks",
             "pages": [
               "base-chain/flashblocks/apps",
-              "base-chain/flashblocks/node-providers"
+              "base-chain/flashblocks/node-providers",
+              "base-chain/flashblocks/docs"
             ]
           },
           {
@@ -173,14 +175,13 @@
         "groups": [
           {
             "group": "Introduction",
-            "pages": [
-              "base-account/overview/what-is-base-account"
-            ]
+            "pages": ["base-account/overview/what-is-base-account"]
           },
           {
             "group": "Quickstart",
             "pages": [
               "base-account/quickstart/web",
+              "base-account/quickstart/web-react",
               "base-account/quickstart/mobile-integration"
             ]
           },
@@ -205,7 +206,9 @@
                 "group": "Wagmi",
                 "pages": [
                   "base-account/framework-integrations/wagmi/setup",
-                  "base-account/framework-integrations/wagmi/sub-accounts"
+                  "base-account/framework-integrations/wagmi/sign-in-with-base",
+                  "base-account/framework-integrations/wagmi/base-pay",
+                  "base-account/framework-integrations/wagmi/other-use-cases"
                 ]
               },
               {
@@ -228,6 +231,12 @@
                   "base-account/reference/base-pay/pay",
                   "base-account/reference/base-pay/getPaymentStatus",
                   "base-account/reference/core/getProvider",
+                  "base-account/reference/spend-permission-utilities/requestSpendPermission",
+                  "base-account/reference/spend-permission-utilities/prepareSpendCallData",
+                  "base-account/reference/spend-permission-utilities/fetchPermissions",
+                  "base-account/reference/spend-permission-utilities/getPermissionStatus",
+                  "base-account/reference/spend-permission-utilities/requestRevoke",
+                  "base-account/reference/spend-permission-utilities/prepareRevokeCallData",
                   "base-account/reference/core/generateKeyPair",
                   "base-account/reference/core/getKeypair",
                   "base-account/reference/core/getCryptoKeyAccount"
@@ -286,11 +295,11 @@
                     "pages": [
                       "base-account/reference/core/capabilities/overview",
                       "base-account/reference/core/capabilities/signInWithEthereum",
-                      "base-account/reference/core/capabilities/datacallback",
                       "base-account/reference/core/capabilities/atomic",
-                      "base-account/reference/core/capabilities/paymasterService",
                       "base-account/reference/core/capabilities/flowControl",
-                      "base-account/reference/core/capabilities/auxiliaryFunds"
+                      "base-account/reference/core/capabilities/paymasterService",
+                      "base-account/reference/core/capabilities/auxiliaryFunds",
+                      "base-account/reference/core/capabilities/datacallback"
                     ]
                   }
                 ]
@@ -368,26 +377,128 @@
         "groups": [
           {
             "group": "Introduction",
+            "pages": ["base-app/introduction/beta-faq"]
+          },
+          {
+            "group": "Chat Agents",
             "pages": [
-              "base-app/introduction/getting-started",
-              "base-app/introduction/mini-apps",
-              "base-app/introduction/beta-faq"
+              "base-app/agents/why-agents",
+              "base-app/agents/chat-agents",
+              "base-app/agents/building-quality-agents",
+              "base-app/agents/getting-started",
+              "base-app/agents/content-types",
+              "base-app/agents/transaction-trays",
+              "base-app/agents/deeplinks",
+              "base-app/agents/x402-agents",
+              "base-app/agents/mini-apps-and-agents",
+              "base-app/agents/best-practices",
+              "base-app/agents/getting-featured"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Mini Apps",
+        "groups": [
+          {
+            "group": "Introduction",
+            "pages": ["mini-apps/overview"]
+          },
+          {
+            "group": "Quickstart",
+            "pages": [
+              {
+                "group": "New Apps",
+                "pages": [
+                  "mini-apps/quickstart/new-apps/install",
+                  "mini-apps/quickstart/new-apps/deploy",
+                  "mini-apps/quickstart/new-apps/create-manifest",
+                  "mini-apps/quickstart/new-apps/features"
+                ]
+              },
+              {
+                "group": "Existing Apps",
+                "pages": [
+                  "mini-apps/quickstart/existing-apps/install",
+                  "mini-apps/quickstart/existing-apps/add-minikit",
+                  "mini-apps/quickstart/existing-apps/configure-environment",
+                  "mini-apps/quickstart/existing-apps/manifest-cli",
+                  "mini-apps/quickstart/existing-apps/create-manifest",
+                  "mini-apps/quickstart/existing-apps/add-frame-metadata",
+                  "mini-apps/quickstart/existing-apps/test-and-deploy"
+                ]
+              },
+              "mini-apps/quickstart/launch-checklist"
             ]
           },
           {
-            "group": "Build with MiniKit",
+            "group": "Design Guidelines",
             "pages": [
-              "base-app/build-with-minikit/overview",
-              "base-app/build-with-minikit/quickstart",
-              "base-app/build-with-minikit/existing-app-integration",
-              "base-app/build-with-minikit/debugging"
+              "mini-apps/design-ux/best-practices",
+              "mini-apps/design-ux/onchainkit"
             ]
           },
           {
-            "group": "Guides",
+            "group": "Growth Playbook",
             "pages": [
-              "base-app/guides/thinking-social",
-              "base-app/guides/chat-agents"
+              "mini-apps/growth/optimize-onboarding",
+              "mini-apps/growth/build-viral-mini-apps",
+              "mini-apps/growth/data-driven-growth",
+              "mini-apps/growth/rewards"
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "mini-apps/features/overview",
+              "mini-apps/features/manifest",
+              "mini-apps/features/authentication",
+              "mini-apps/features/context",
+              "mini-apps/features/embeds-and-previews",
+              "mini-apps/features/search-and-discovery",
+              "mini-apps/features/sharing-and-social-graph",
+              "mini-apps/features/notifications",
+              "mini-apps/features/links"
+            ]
+          },
+          {
+            "group": "Troubleshooting",
+            "pages": [
+              "mini-apps/troubleshooting/common-issues",
+              "mini-apps/troubleshooting/base-app-compatibility"
+            ]
+          },
+          {
+            "group": "Technical Reference",
+            "pages": [
+              {
+                "group": "MiniKit",
+                "pages": [
+                  "mini-apps/technical-reference/minikit/overview",
+                  "mini-apps/technical-reference/minikit/provider-and-initialization",
+                  {
+                    "group": "Hooks",
+                    "pages": [
+                      "mini-apps/technical-reference/minikit/hooks/useMiniKit",
+                      "mini-apps/technical-reference/minikit/hooks/useOpenUrl",
+                      "mini-apps/technical-reference/minikit/hooks/useClose",
+                      "mini-apps/technical-reference/minikit/hooks/usePrimaryButton",
+                      "mini-apps/technical-reference/minikit/hooks/useViewProfile",
+                      "mini-apps/technical-reference/minikit/hooks/useComposeCast",
+                      "mini-apps/technical-reference/minikit/hooks/useViewCast",
+                      "mini-apps/technical-reference/minikit/hooks/useAuthenticate",
+                      "mini-apps/technical-reference/minikit/hooks/useAddFrame",
+                      "mini-apps/technical-reference/minikit/hooks/useNotification"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Resources",
+            "pages": [
+              "mini-apps/resources/resources"
             ]
           }
         ]
@@ -679,6 +790,47 @@
           {
             "group": "Build with AI",
             "pages": ["cookbook/ai-prompting", "cookbook/base-builder-mcp"]
+          },
+          {
+            "group": "Vibe Code a Mini App",
+            "pages": [
+              {
+                "group": "Foundations",
+                "pages": [
+                  "cookbook/introduction-to-mini-apps",
+                  "cookbook/ai-powered-development-fundamentals",
+                  "cookbook/mastering-ai-prompt-engineering"
+                ]
+              },
+              {
+                "group": "Documentation & Reading",
+                "pages": [
+                  "cookbook/essential-documentation-resources",
+                  "cookbook/ai-assisted-documentation-reading"
+                ]
+              },
+              {
+                "group": "Building",
+                "pages": [
+                  "cookbook/successful-miniapps-in-tba",
+                  "cookbook/minikit/build-your-mini-app-with-prompt",
+                  "cookbook/converting-customizing-mini-apps",
+                  "cookbook/minikit/fork-and-customize"
+                ]
+              },
+              {
+                "group": "Add MiniKit to Your App",
+                "pages": [
+                  "cookbook/minikit/install",
+                  "cookbook/minikit/add-minikit",
+                  "cookbook/minikit/configure-environment",
+                  "cookbook/minikit/manifest-cli",
+                  "cookbook/minikit/create-manifest",
+                  "cookbook/minikit/add-frame-metadata",
+                  "cookbook/minikit/test-and-deploy"
+                ]
+              }
+            ]
           }
         ]
       },
@@ -1105,6 +1257,7 @@
     "socials": {
       "x": "https://x.com/base",
       "github": "https://github.com/base",
+      "reddit": "https://www.reddit.com/r/BASE/",
       "linkedin": "https://linkedin.com/company/coinbase"
     },
     "links": [
@@ -2223,8 +2376,87 @@
     {
       "source": "/wallet-app/:slug*",
       "destination": "/base-app/:slug*"
+    },
+    {
+      "source": "/base-app/introduction/what-are-mini-apps",
+      "destination": "/mini-apps/overview"
+    },
+    {
+      "source": "/base-app/introduction/why-mini-apps",
+      "destination": "/mini-apps/overview"
+    },
+    {
+      "source": "/base-app/miniapps/overview",
+      "destination": "/mini-apps/technical-reference/minikit/overview"
+    },
+    {
+      "source": "/base-app/build-with-minikit/overview",
+      "destination": "/mini-apps/technical-reference/minikit/overview"
+    },
+    {
+      "source": "/base-app/miniapps/existing-app-integration",
+      "destination": "/mini-apps/quickstart/existing-apps/install"
+    },
+    {
+      "source": "/base-app/build-with-minikit/existing-app-integration",
+      "destination": "/mini-apps/quickstart/existing-apps/install"
+    },
+    {
+      "source": "/base-app/miniapps/quickstart",
+      "destination": "/mini-apps/quickstart/new-apps/install"
+    },
+    {
+      "source": "/base-app/build-with-minikit/quickstart",
+      "destination": "/mini-apps/quickstart/new-apps/install"
+    },
+    {
+      "source": "/base-app/miniapps/mini-apps",
+      "destination": "/mini-apps/overview"
+    },
+    {
+      "source": "/base-app/build-with-minikit/mini-apps",
+      "destination": "/mini-apps/overview"
+    },
+    {
+      "source": "/base-app/miniapps/search-and-discovery",
+      "destination": "/mini-apps/features/search-and-discovery"
+    },
+    {
+      "source": "/base-app/build-with-minikit/search-and-discovery",
+      "destination": "/mini-apps/features/search-and-discovery"
+    },
+    {
+      "source": "/base-app/miniapps/sharing-your-miniapp",
+      "destination": "/mini-apps/features/sharing-and-social-graph"
+    },
+    {
+      "source": "/base-app/build-with-minikit/sharing-your-miniapp",
+      "destination": "/mini-apps/features/sharing-and-social-graph"
+    },
+    {
+      "source": "/base-app/miniapps/how-manifest-work",
+      "destination": "/mini-apps/features/manifest"
+    },
+    {
+      "source": "/base-app/build-with-minikit/how-manifest-work",
+      "destination": "/mini-apps/features/manifest"
+    },
+    {
+      "source": "/base-app/miniapps/thinking-social",
+      "destination": "/mini-apps/growth/build-viral-mini-apps"
+    },
+    {
+      "source": "/base-app/build-with-minikit/thinking-social",
+      "destination": "/mini-apps/growth/build-viral-mini-apps"
+    },
+    {
+      "source": "/base-app/miniapps/debugging",
+      "destination": "/mini-apps/troubleshooting/common-issues"
+    },
+    {
+      "source": "/base-app/build-with-minikit/debugging",
+      "destination": "/mini-apps/troubleshooting/common-issues"
     }
-   
   ],
   "integrations": {
     "ga4": {
