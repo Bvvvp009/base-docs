@@ -481,14 +481,14 @@ The `setPeer` function expects the following arguments:
 
 | Name    | Type      | Description                                                                                              |
 | :------ | :-------- | :------------------------------------------------------------------------------------------------------- |
-| `_eid`  | `uint32`  | The [endpoint ID](https://docs.layerzero.network/contracts/endpoint-addresses) of the destination chain. |
+| `_eid`  | `uint32`  | The [endpoint ID](https://docs.layerzero.network/v2/deployments/deployed-contracts) of the destination chain. |
 | `_peer` | `bytes32` | The contract address of the OApp contract on the destination chain.                                      |
 
 ### Setting the peers
 
 Foundry provides the `cast` command-line tool that can be used to interact with deployed smart contracts and call their functions.
 
-To set the peer of your `ExampleContract` contracts, you can use `cast` to call the `setPeer` function while providing the [endpoint ID](https://docs.layerzero.network/contracts/endpoint-addresses) and address (in bytes) of the deployed contract on the respective destination chain.
+To set the peer of your `ExampleContract` contracts, you can use `cast` to call the `setPeer` function while providing the [endpoint ID](https://docs.layerzero.network/v2/deployments/deployed-contracts) and address (in bytes) of the deployed contract on the respective destination chain.
 
 To set the peer of the Base Sepolia contract to the Optimism Sepolia contract, run the following command:
 
