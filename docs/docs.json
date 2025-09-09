@@ -458,6 +458,7 @@
               "mini-apps/features/search-and-discovery",
               "mini-apps/features/sharing-and-social-graph",
               "mini-apps/features/notifications",
+              "mini-apps/features/wallet",
               "mini-apps/features/links"
             ]
           },
@@ -498,7 +499,8 @@
           {
             "group": "Resources",
             "pages": [
-              "mini-apps/resources/resources"
+              "mini-apps/resources/templates",
+              "mini-apps/llms-full.txt"
             ]
           }
         ]
@@ -777,6 +779,7 @@
             "pages": [
               "cookbook/onboard-any-user",
               "cookbook/accept-crypto-payments",
+              "cookbook/spend-permissions-ai-agent",
               "cookbook/launch-ai-agents",
               "cookbook/launch-tokens",
               "cookbook/deploy-a-chain",
@@ -1245,13 +1248,12 @@
       {
         "label": "Support",
         "href": "https://discord.com/invite/buildonbase"
+      },
+      {
+        "label": "Base.org",
+        "href": "https://base.org"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Base.org",
-      "href": "https://base.org"
-    }
+    ]
   },
   "footer": {
     "socials": {
